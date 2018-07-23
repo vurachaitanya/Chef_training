@@ -1,18 +1,22 @@
-def cheese_and_crackers(cheese_count, boxes_of_crakers)
-    puts "your have #{cheese_count} cheese !"
-    puts "you have #{boxes_of_crakers} boxes of crackers!"
-    puts "man thats enough for a party!"
-    puts "get a blanket \n"
-end
-puts "we can just give the function numbers directly"
-cheese_and_crackers(20,30)
+user_name = ARGV.first # gets the first argument
+prompt = '> '
 
-puts "OR we can use variables form our scripts"
-amount_of_cheese = 10
-amount_of_crackers = 50
+puts "Hi #{user_name}."
+puts "I'd like to ask you a few questions."
+puts "Do you like me #{user_name}? "
+puts prompt
+likes = $stdin.gets.chomp
 
+puts "Where do you live #{user_name}? "
+puts prompt
+lives = $stdin.gets.chomp
 
-cheese_and_crackers(amount_of_cheese,amount_of_crackers)
-cheese_and_crackers(10 +33, 44+33)
-cheese_and_crackers(amount_of_cheese + 11, amount_of_crackers + 454)
+# a comma for puts is like using it twice
+puts "What kind of computer do you have? ", prompt
+computer = $stdin.gets.chomp
 
+puts """
+Alright, so you said #{likes} about liking me.
+You live in #{lives}.  Not sure where that is.
+And you have a #{computer} computer.  Nice.
+"""

@@ -1,32 +1,34 @@
-def add(a, b)
-    puts "Adding #{a} + #{b}"
-    return a + b
-end
+filename = ARGV.first
 
-def subtract(a, b)
-    puts "subb #{a} - #{b}"
-    return a - b
-end
+puts "We're going to erase #{filename}"
+puts "If you don't want that, hit CTRL-C (^C)."
+puts "If you do want that, hit RETURN."
 
-def multiply(a, b)
-    puts "multiply #{a} * #{b}"
-    return a * b
-end
+$stdin.gets
 
-def divide(a, b)
-    puts "deviding #{a} / #{b}"
-    return a / b
-end
+puts "Opening the file..."
+target = open(filename, 'w')
 
-puts "lets do some math with just functions"
+puts "Truncating the file.  Goodbye!"
+target.truncate(0)
 
-age = add(30, 5)
-hight = subtract(34, 5)
-weight = multiply(33, 44)
-iq = divide(100, 2)
+puts "Now I'm going to ask you for three lines."
 
-puts "#{age} , #{hight}, #{weight}, #{iq} "
+print "line 1: "
+line1 = $stdin.gets.chomp
+print "line 2: "
+line2 = $stdin.gets.chomp
+print "line 3: "
+line3 = $stdin.gets.chomp
 
-puts "#{add(30,5)}"
+puts "I'm going to write these to the file."
 
-puts " here is the puzzle"
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+puts "And finally, we close it."
+target.close

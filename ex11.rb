@@ -1,33 +1,13 @@
-input_file = ARGV.first
+filename = ARGV.first
 
-def print_all(f)
-    puts f.read
-end
+txt = open(filename)
 
-def rewind(f)
-    f.seek(0)
-end
+puts "Here's your file #{filename}:"
+print txt.read
 
-def print_a_line(line_count,f)
-    puts "#{line_count}, #{f.gets.chomp}"
-end
+print "Type the filename again: "
+file_again = $stdin.gets.chomp
 
-current_file = open(input_file)
+txt_again = open(file_again)
 
-puts "first lets print the whole file:\n"
-
-print_all(current_file)
-
-puts "lets rewind "
-rewind(current_file)
-
-puts "lets print three lines"
-
-current_line = 1
-print_a_line(current_line,current_file)
-
-current_line = current_line + 1
-print_a_line(current_line,current_file)
-
-current_line = current_line + 1
-print_a_line(current_line,current_file)
+print txt_again.read

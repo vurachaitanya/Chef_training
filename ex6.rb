@@ -1,15 +1,15 @@
-filename = ARGV.first
+tabby_cat = "\tI'm tabbed in."
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat."
 
-txt = open(filename)
+fat_cat = """
+I'll do a list:
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t* Grass
+"""
 
-puts "heres your file #{filename}"
-print txt.read
-#puts txt.read
-
-print "type the filename again"
-file_again = $stdin.gets.chomp
-
-txt_again = open(file_again)
-
-print txt_again.read
-
+puts tabby_cat
+puts persian_cat
+puts backslash_cat
+puts fat_cat
