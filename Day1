@@ -32,9 +32,23 @@ y = "test #{test}"
 puts x
 puts y
 puts "hi this is #{x}"
+puts "#{x + y}"
 hi = false
 say = " I said a joke #{hi}"
 puts say
+###################################
+a = "\tI'm tabbd in"
+b = "I'm split\non a line"
+c = "I'm \\ a \\ cat"
 
-
+fat_cat = """
+i :
+\t* cat good
+\t* fishies
+\t* abc \n\t* grass
+"""
+puts a
+puts b
+puts c
+puts fat_cat
 
