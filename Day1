@@ -1,3 +1,10 @@
 # Chef_training -- Ruby basics
 ''https://rubyinstaller.org/downloads/ - with out Dev kit -x64''
 ''https://code.visualstudio.com/docs/?dv=win - editor''
+ 
+ C:\Users\admin\Desktop\Ruby> ruby .\ex1.rb
+hello World
+ I'd much rather you  'not'.
+PS C:\Users\admin\Desktop\Ruby>
+
+
