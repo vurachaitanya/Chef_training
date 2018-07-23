@@ -1,7 +1,12 @@
 # Chef_training -- Ruby basics
 ''https://rubyinstaller.org/downloads/ - with out Dev kit -x64''
 ''https://code.visualstudio.com/docs/?dv=win - editor''
- 
+
+Executing multiple commands on the same line
+``` 
+irb(main):019:0> a=3, b=22, c=9,  (a > b || a < c)
+=> [3, 22, 9, true]
+ ```
  C:\Users\admin\Desktop\Ruby> ruby .\ex1.rb
 hello World
  I'd much rather you  'not'.

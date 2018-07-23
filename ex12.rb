@@ -30,4 +30,3 @@ puts "#{age} , #{hight}, #{weight}, #{iq} "
 puts "#{add(30,5)}"
 
 puts " here is the puzzle"
-
