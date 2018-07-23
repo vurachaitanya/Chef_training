@@ -13,3 +13,6 @@ amount_of_crackers = 50
 
 
 cheese_and_crackers(amount_of_cheese,amount_of_crackers)
+cheese_and_crackers(10 +33, 44+33)
+cheese_and_crackers(amount_of_cheese + 11, amount_of_crackers + 454)
+
