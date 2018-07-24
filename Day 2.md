@@ -38,8 +38,11 @@ Servers,
 Ohai - utility/service will gives you nodes configurations.
 when ever node is poled with servers Ohai is been updated and checked with Chef server.```
 
+
 ```if any new software is been installed on client that sofware will be removed by Chef server as it don't have cookbook for that software. Configuration drift will take place.```
+
 
 ```So if we need to install any software we need to have a recipy/cookbook. else removed.```
 
+```compliance Chef recipes will make sure no extra software is been installed on any client or agent nodes.```
 
