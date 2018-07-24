@@ -68,4 +68,7 @@ eruser003@gmail.com eruser@2012 ####AWS Account
 
 ######################################
 knife bootstrap 13.126.177.7 --ssh-user ubuntu --sudo --identity-file Pavan.pem --node-name chaitanyau2
+########################################
+1. Ominibus installer for bootstraping the nodes.
+2. ruby, chef, ohai
 
