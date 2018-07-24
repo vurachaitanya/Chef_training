@@ -79,3 +79,13 @@ chef generate cookbook apache
 # knife cookbook upload apache
 # knife node run_list add vurachaitanya "recipe[apache]"
 # chef-client  ##for running to get cookbook which are in run list
+# git add * && git commit -m updated && git push origin master   ## command to update your git repo.
+3.  knife node show vurachaitanya -l ## long list of ohai
+4. Oder of presedance :
+attributes at variable level.
+automaticall on the node
+in roles
+in Env
+in cookbook recipes
+cookbook attrebute files.
+5. 
