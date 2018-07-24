@@ -71,4 +71,9 @@ knife bootstrap 13.126.177.7 --ssh-user ubuntu --sudo --identity-file Pavan.pem 
 ########################################
 1. Ominibus installer for bootstraping the nodes.
 2. ruby, chef, ohai
-
+##################
+chef generate cookbook apache
+#################
+1. In recipes it execute first code first.
+2. If one resources failed go's to next step.
+3. 
