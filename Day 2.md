@@ -34,8 +34,9 @@ Type of servers, app server, load balancers, db, monitoring.
 Nodes:
 Servers,
 
-```each node belongs to one organistation and one environment.
-Ohai - utility/service will gives you nodes configurations.
+```each node belongs to one organistation and one environment.```
+
+```Ohai - utility/service will gives you nodes configurations.
 when ever node is poled with servers Ohai is been updated and checked with Chef server.```
 
 
