@@ -55,5 +55,17 @@ Servers,
 
 ```www.chef.io https://manage.chef.io/organizations/chaitanya_chef/nodes```
 
+```Knife.rb is an interface between your server and client. location under .chef/knife.rb```
 
+````
+knife --version
+knife client list   ## you should be on .chef folder for using the pem keys.
+
+Knife --help list
+````
+
+eruser003@gmail.com eruser@2012 ####AWS Account
+
+######################################
+knife bootstrap 13.126.177.7 --ssh-user ubuntu --sudo --identity-file Pavan.pem --node-name chaitanyau2
 
