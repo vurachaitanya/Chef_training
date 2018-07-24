@@ -76,4 +76,6 @@ chef generate cookbook apache
 #################
 1. In recipes it execute first code first.
 2. If one resources failed go's to next step.
-3. 
+# knife cookbook upload apache
+# knife node run_list add vurachaitanya "recipe[apache]"
+# chef-client  ##for running to get cookbook which are in run list
