@@ -26,14 +26,15 @@ end
 node["apache"]["sites"].each do |site_name, site_data|
     document_root = "/etc/apache2/sites-enabled/#{site_name}"
 
-template "/etc/apache2/sites-enabled/#{site_name}/#{site_name}.conf" do
+template "/etc/apache2/sites-enabled/#{site_name}.conf" do
     source "custom.erb"
     mode "0644"
+    action :create
     variables({
-        :document_root => document_root,
-        :port => site_data["port"]
+        "document_root" => document_root,
+        "port" => site_data["port"]
     })
-    notifies :restart, service["apache2"]
+    #notifies :restart, service["apache2"]
 end
 
 directory  document_root do
@@ -45,8 +46,8 @@ template "#{document_root}/index.html" do
     source "index.html.erb"
     mode "0644"
     variables({
-        :site_name => site_name ,
-        :port => site_data["port"]
+        "site_name" => site_name,
+        "port" => site_data["port"]
     })
     end
 end

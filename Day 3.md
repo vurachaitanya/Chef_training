@@ -8,4 +8,5 @@
 # knife cookbook upload  pci
 # knife node run_list add vurachaitanya "recipe[motd]"
 4. depends "pci" is to be added in metadata.rb to make sure you pull that cookbook
-5. idepotency can be managed using guards if and only_if
+5. idepotency can be managed using guards if and only_if...stopping from breaking...not_if...need to taken care when "execute" module is been used. 
+6. 
