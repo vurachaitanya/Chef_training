@@ -10,3 +10,28 @@
 4. depends "pci" is to be added in metadata.rb to make sure you pull that cookbook
 5. idepotency can be managed using guards if and only_if...stopping from breaking...not_if...need to taken care when "execute" module is been used. 
 6. Data bags - more of user data stored...Ex- users, hosts...etc
+ # knife data_bag create users
+ # knife data_bag from file users bobo.json
+ Sample Json file for data bags:
+ ```
+ {
+    "id": "bobo",
+    "comment": "Bobo T. Clown",
+    "uid": 2000,
+    "gid": 0,
+    "home": "/home/bobo",
+    "shell": "bin/bash"
+}
+```
+7. 
+# knife search users "*:*" ----> prints entire databags
+# knife search users "id:bobo" -a shell ---->prints only shell information.
+# mkdir data_bags/groups
+# knife data_bag create groups
+sample Json file from data bag groups:
+-->clowns.json
+{
+    "id": "clowns",
+    "gid": 3000,
+    "members": ["bobo","frank"]
+}
