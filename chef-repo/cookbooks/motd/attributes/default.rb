@@ -1,1 +1,1 @@
-default["motd"]["company"] = "mocomp"
+default["motd"]["company"] = "chaitanya"
