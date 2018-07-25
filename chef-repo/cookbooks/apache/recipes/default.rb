@@ -3,9 +3,9 @@
 # Recipe:: default
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
-package "apache2" do
-    action :uninstall
-end
+#package "apache2" do
+#    action :purge
+#end
 
 package "apache2" do
     action :install
@@ -24,7 +24,7 @@ execute "mv /etc/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabl
     only_if do
         File.exist?("/etc/apache2/sites-enabled/000-default.conf")
     end
-    notifies :restart,  "service[apache]"
+    notifies :restart,  "service[apache2]"
 end
 
 node["apache"]["sites"].each do |site_name, site_data|

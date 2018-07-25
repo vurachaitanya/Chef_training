@@ -35,3 +35,16 @@ sample Json file from data bag groups:
     "gid": 3000,
     "members": ["bobo","frank"]
 }
+# knife data_bag from file groups clowns.json
+# knife search groups "*:*"
+# chef generate cookbook users
+# knife cookbook upload users
+# knife node run_list add vurachaitanya "recipe[users]"
+# knife data_bag from file users frank.json
+# knife data_bag from file group clowns.json
+5. Role :-  
+# knife role from file webserver.rb
+# knife role show webserver
+# knife search node "role:webserver" -a apache.sites
+# knife role from file webserver.rb
+

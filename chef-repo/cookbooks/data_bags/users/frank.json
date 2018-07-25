@@ -4,5 +4,5 @@
     "uid": 2001,
     "gid": 0,
     "home": "/home/frank",
-    "shell": "bin/bash"
+    "shell": "/bin/bash"
 }
