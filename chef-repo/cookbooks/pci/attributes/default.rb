@@ -1,1 +1,1 @@
-default["pci"]["in_scope"] = "mocomp"
+default["pci"]["in_scope"] = true

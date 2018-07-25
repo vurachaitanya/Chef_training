@@ -4,5 +4,7 @@
 2. erb = EMBEDDED ruby
 3. ruby -wc <file name> to check syntax for ruby code.
 # knife cookbook upload motd
-4. 
 # chef generate cookbook pci
+# knife cookbook upload  pci
+# knife node run_list add vurachaitanya "recipe[motd]"
+4. depends "pci" is to be added in metadata.rb to make sure you pull that cookbook
