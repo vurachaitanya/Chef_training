@@ -26,7 +26,7 @@ end
 node["apache"]["sites"].each do |site_name, site_data|
     document_root = "/etc/apache2/sites-enabled/#{site_name}"
 
-template "/etc/apache2/sites-enabled/#{site_name}.conf" do
+template "/etc/apache2/sites-enabled/#{site_name}/#{site_name}.conf" do
     source "custom.erb"
     mode "0644"
     variables (
@@ -49,7 +49,6 @@ template "#{document_root}/index.html" do
         :port => site_data["port"]
     )
     end
-end
 
 
 
