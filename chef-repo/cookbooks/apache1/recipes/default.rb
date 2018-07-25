@@ -11,8 +11,14 @@ service "apache2" do
     action [ :enable, :start ]
 end
 
+#cookbook_file "/var/www/html/index.html" do
+#    source "index.html"
+#    mode "0644"
+#end
+
 node.default["apache"]["indexfile"] = "index2.html"
+
 cookbook_file "/var/www/html/index.html" do
-    source node ["apache1"]["indexfile"]
+    source node["apache"]["indexfile"]
     mode "0644"
 end
