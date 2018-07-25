@@ -4,6 +4,10 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 package "apache2" do
+    action :uninstall
+end
+
+package "apache2" do
     action :install
 end
 
