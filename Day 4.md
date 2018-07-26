@@ -10,4 +10,6 @@
 # mkdir environments
 # touch dev.rb  
 6. Cookbook versions can be defined as per the environment. So as to stop installing latest software in prod environment. 
-7. 
+7. Can have multiple cookbooks can be defined.
+# knife environment from file dev.rb
+# knife environment from file production.rb
