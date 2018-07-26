@@ -13,3 +13,7 @@
 7. Can have multiple cookbooks can be defined.
 # knife environment from file dev.rb
 # knife environment from file production.rb
+8. Chef Supermarket:- repository of cookbook by developers. Free.
+9. Chef-solo 
+
+
