@@ -4,13 +4,11 @@
 
 <VirtualHost *:<%= @port %>>
     ServerAdmin webmaster@localhost
-
     DocumentRoot <%= @document_root %>
     <Directory />
-      Options FollowSymlinks
-      AllowOverride Node
+        Options FollowSymlinks
+        AllowOverride Node
     </Directory>
-
     <Directory <%= @document_root %> >
         Options Indexes FollowSymLinks MultiViews
         AllowOverride None
@@ -18,5 +16,4 @@
         allow from allow
         Require all granted
     </Directory>
-    
 </VirtualHost>
